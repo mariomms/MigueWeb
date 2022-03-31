@@ -1,0 +1,100 @@
+*
+{  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Times New Roman', Times, serif;
+}
+:root
+{
+    --c:rgb(21, 108, 134);
+    --d:rgb(125, 126, 107);
+    
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: var(--c);
+    background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fep01.epimg.net%2Felpais%2Fimagenes%2F2021%2F12%2F10%2Falbum%2F1639143803_433213_1639745607_noticia_normal.jpg&imgrefurl=https%3A%2F%2Felpais.com%2Felpais%2F2021%2F12%2F10%2Falbum%2F1639143803_433213.html&tbnid=mrW3W6kjeZj8VM&vet=12ahUKEwiYl8SE_Oj2AhUORkEAHeg7Bf8QMygDegUIARDXAQ..i&docid=VgJ1ZEKtQuQiLM&w=1960&h=1217&q=imagenes&ved=2ahUKEwiYl8SE_Oj2AhUORkEAHeg7Bf8QMygDegUIARDXAQ");
+}
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 20px;
+    background: var(--d);
+ 
+
+    border-radius: 10px;
+    
+    
+}
+.navigation
+{
+width: 1200px;
+height: 100px;
+background:rgb(233, 224, 233) ;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+
+}
+.navigation ul
+{
+    display: flex;
+    width: 400px;
+
+}
+.navigation ul li 
+{
+    position: relative;
+    list-style: none;
+    width: 100px;
+    height: 10px;
+    z-index: 1;
+}
+.navigation ul li a 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 2em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--d);
+}
+.navigation ul li:hover a .icon
+{
+    transform: translateY(-35px);
+}
+.navigation ul li a .text
+{
+    position: absolute;
+    color: var(--d);
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    transition: 00.5s;
+    opacity: 0;
+}
+.navigation ul li:hover a .text
+{
+    opacity: 1;
+    color: black;
+}
